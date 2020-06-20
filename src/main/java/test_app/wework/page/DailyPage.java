@@ -2,6 +2,7 @@ package test_app.wework.page;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 
 import java.util.Arrays;
@@ -25,9 +26,10 @@ public class DailyPage extends BasePage {
         this.driver = driver;
     }
 
+
     public DailyPage add(String name, String time) {
         click(addEle);
-        sendkey(taskNameEle, name);
+        sendKeys(taskNameEle, name);
         click(save);
         return this;
     }

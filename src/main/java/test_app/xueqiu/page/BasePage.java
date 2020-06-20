@@ -48,7 +48,7 @@ public class BasePage {
         try {
             URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
             driver = new AndroidDriver<MobileElement>(remoteUrl, caps);
-            Thread.sleep(10);
+            Thread.sleep(10000);
         } catch (Exception e) {
             e.printStackTrace();
         }
